@@ -7,6 +7,10 @@
 *.o
 *.obj
 
+*.class
+*.pyc
+com_*.h
+
 # Precompiled Headers
 *.gch
 *.pch
@@ -30,3 +34,11 @@
 *.exe
 *.out
 *.app
+
+# Caffe modols
+*.prototxt
+*.caffemodel
+
+#exclude dir
+build
+log

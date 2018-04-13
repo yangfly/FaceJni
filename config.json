@@ -1,0 +1,44 @@
+{
+  "options": {
+    "detection": true,
+    "recognition": true
+  },
+  "settings": {
+    "K_ctx_per_GPU": 4,
+    "glog": {
+      "level": 0,
+      "dir": "log"
+    },
+    "mtcnn": {
+      "model_dir": "additions/mtcnn",
+      "factor": 0.709,
+      "min_size": 40,
+      "thresholds": [0.5, 0.6, 0.6],
+      "precise_landmark": true,
+      "limitation": {
+        "enable": false,
+        "size": 1080
+      }
+    },
+    "center": {
+      "deploy": "additions/center/face_deploy.prototxt",
+      "model": "additions/center/_iter_100000.caffemodel",
+      "mirror": {
+        "enable": false,
+        "mode": "concat",
+        ".comment": "Supported modes: concat, add, max and min."
+      },
+      "pca": {
+        "enable": false,
+        "model": "fake.pca"
+      },
+      "ref_points": [
+        30.2946, 51.6963, 
+        65.5318, 51.5014, 
+        48.0252, 71.7366,
+        33.5493, 92.3655, 
+        62.7299, 92.2041
+      ]
+    }   
+  }
+}
