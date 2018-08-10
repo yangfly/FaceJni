@@ -55,9 +55,9 @@ FaceJni
   ```
 
 
-### 4. Api 改进
+### 3. Api 改进
 - GpuMat: https://github.com/NVIDIA/gpu-rest-engine/tree/master/caffe
 - TensorRT: https://github.com/NVIDIA/gpu-rest-engine/tree/master/tensorrt
 
-### 5. MTCNN
+### 4. MTCNN
 - MTCNN 版本高于 `FaceJpy` 但落后于 `FaceDeploy`。
